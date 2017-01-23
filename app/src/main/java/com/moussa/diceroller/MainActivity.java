@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     Button rButton = null;
     ImageView diceImg = null;
     LinearLayout result = null;
+    //Die die1, die2, die3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Setting the roll
+        //die1 = new Die
         rButton = (Button) findViewById(R.id.rollButton);
         diceImg = (ImageView) findViewById(R.id.diceImg);
         result =   (LinearLayout) findViewById(R.id.theResult);
