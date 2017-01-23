@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="3"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.moussa.diceroller.MainActivity">
+
+    <TextView
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:text="Total Score: 0"
+        android:textSize="16sp"
+        android:layout_gravity="top|right"/>
+
+
+    <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Level 1 - 3 dice"
+        android:textSize="32sp"
+       android:layout_gravity="center_horizontal"
+        android:layout_weight="0.31" />
+
+
+    <ImageView
+        android:id="@+id/diceImg"
+        android:layout_height="187dp"
+        android:layout_width="match_parent"
+        android:layout_margin="0dp"
+        android:src="@drawable/threedice"/>
+
+    <LinearLayout
+        android:id="@+id/theResult"
+        android:layout_height="236dp"
+        android:layout_width="match_parent"
+        android:layout_margin="0dp"
+        android:visibility="gone"
+        android:weightSum="3"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_height="236dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="0dp"
+            android:id="@+id/diceOneImg"
+            android:src="@drawable/dieone"/>
+
+        <ImageView
+            android:layout_height="236dp"
+            android:layout_width="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:id="@+id/diceTwoImg"
+            android:src="@drawable/dietwo"/>
+
+        <ImageView
+            android:layout_height="236dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="0dp"
+            android:id="@+id/diceTheeImg"
+            android:src="@drawable/diethree"/>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You scored a 6"
+        android:textSize="32sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roll"
+        android:layout_gravity="center_horizontal"
+        android:textSize="32sp"
+        android:padding="20dp"
+        android:id="@+id/rollButton"
+        />
+
+
+</LinearLayout>
