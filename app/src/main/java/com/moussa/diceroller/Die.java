@@ -1,3 +1,7 @@
+package com.moussa.diceroller;
+
+import android.media.Image;
+
 import java.util.Random;
 
 /**
@@ -6,7 +10,7 @@ import java.util.Random;
 
 public class Die {
     private int faceVal = 1;
-    private String faceImgSrc = "@drawable/diceone";
+    private int faceImgSrc = R.drawable.dieone;
     private int rollScore = 0;
 
     public Die() {
@@ -20,7 +24,7 @@ public class Die {
         this.faceVal = faceVal;
     }
 
-    public String getFaceImgSrc(){
+    public int getFaceImgSrc(){
         return faceImgSrc;
     }
 
@@ -35,25 +39,25 @@ public class Die {
     public void setFaceImgSrc(){
         switch(faceVal){
             case 1:
-                faceImgSrc = "@drawable/dieone";
+                faceImgSrc = R.drawable.dieone;
                 break;
             case 2:
-                faceImgSrc = "@drawable/dietwo";
+                faceImgSrc = R.drawable.dietwo;
                 break;
             case 3:
-                faceImgSrc = "@drawable/diethree";
+                faceImgSrc = R.drawable.diethree;
                 break;
             case 4:
-                faceImgSrc = "@drawable/diefour";
+                faceImgSrc = R.drawable.diefour;
                 break;
             case 5:
-                faceImgSrc =  "@drawable/diefive";
+                faceImgSrc =  R.drawable.diefive;
                 break;
             case 6:
-                faceImgSrc =  "@drawable/diesix";
+                faceImgSrc =  R.drawable.diesix;
                 break;
             default:
-                faceImgSrc = "@drawable/dieone";
+                faceImgSrc = R.drawable.dieone;
                 break;
         }
     }

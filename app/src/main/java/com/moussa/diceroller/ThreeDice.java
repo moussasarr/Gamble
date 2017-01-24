@@ -2,8 +2,10 @@
  * Created by MS on 1/23/17.
  */
 
+package com.moussa.diceroller;
+
 public class ThreeDice {
-    private Die die1, die2, die3;
+    Die die1, die2, die3;
     private int rollScore = 0;
 
     public int getRollScore() {
@@ -25,6 +27,19 @@ public class ThreeDice {
         die2.roll();
         die3.roll();
         setRollScore();
+    }
+
+    public int[] getFaceImgValues(){
+        int die1Face, die2Face, die3Face;
+        int [] values = new int[3];
+
+        die1Face = die1.getFaceImgSrc();
+        die2Face = die2.getFaceImgSrc();
+        die3Face = die3.getFaceImgSrc();
+        values[0] =  die1Face;
+        values[1] =  die2Face;
+        values[2] =  die3Face;
+        return values;
     }
 
 }

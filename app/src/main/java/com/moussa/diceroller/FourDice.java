@@ -2,6 +2,8 @@
  * Created by MS on 1/23/17.
  */
 
+package com.moussa.diceroller;
+
 public class FourDice {
     private Die die1, die2, die3, die4;
     private int rollScore = 0;
